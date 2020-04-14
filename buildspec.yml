@@ -18,7 +18,7 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-      - '**/*'
-  base-directory: 'dist/isr*'
+      - 'target/*'
+  base-directory: 'dist'
   discard-paths: no
 
