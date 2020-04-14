@@ -16,9 +16,8 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
+      - zip -r target/aws-build-sample-maven-project-0.0.1-SNAPSHOT.jar .
 artifacts:
   files:
-      - 'target/*'
-  base-directory: 'dist'
-  discard-paths: no
-
+     - target/aws-build-sample-maven-project-0.0.1-SNAPSHOT.jar
+  #discard-paths: yes
